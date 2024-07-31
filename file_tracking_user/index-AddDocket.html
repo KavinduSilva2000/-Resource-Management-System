@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>INS DASHBOARD</title>
+  <link rel="stylesheet" href="Style_FileTracking.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<a href="index-AddDocket.html"></a>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <header>User Panel</header>
+    <ul>
+      <li><a href="index-main.html">Add File</a></li>
+      <li><a href="index-AddDocket.html">Add New Docket</a></li>
+      <li><a href="Search.html">Search File</a></li>
+    </ul>
+  </div>
+
+  <!-- Search bar -->
+  <div class="search-bar">
+    <header>Add New Docket</header>
+  </div>
+
+  <!-- Profile -->
+  <div class="profile">
+    <div class="dropdown">
+      <header class="dropbtn">My Profile</header>
+      <div class="dropdown-content">
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+        <a href="#">Profile</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div class="form-container">
+    <form class="my-form" action="AddDocket.php" method="post">
+      <div class="form-group">
+        <label for="docket">Docket NO</label>
+        <input type="number" id="docket" name="docket" placeholder=" " required>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="capacity">Capacity</label>
+        <input type="number" id="capacity" name="capacity" placeholder=" " required>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="cupboardno">Cupboard NO</label>
+        <input type="number" id="cupboardno" name="cupboardno" placeholder=" " required>
+      </div>
+      <br />
+      <div class="form-group">
+        <label for="rackno">Rack NO</label>
+        <input type="number" id="rackno" name="rackno" placeholder=" " required>
+      </div>
+      <br />
+      <br>
+      <div class="button-group">
+        <button type="submit">Add</button>
+        <button type="reset">Clear</button>
+      </div>
+    </form>
+  </div>
+
+  <section></section>
+  
+  
+</body>
+</html>
